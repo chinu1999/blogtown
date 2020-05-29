@@ -1,0 +1,39 @@
+<%- include("partials/header"); -%>
+<div class="profile">
+    <h1 class="name"><%=info[0].fullName%></h1>
+    <h2 class="email">Email: <%=info[0].username%></h2>
+    <%if(posts.length===0){%>
+      <h2 class="heading">No posts yet!</h2>
+    <%}%>
+    <%if(posts.length!==0){%>
+      <h2 class="heading">Your Posts</h2>
+    <%}%>
+<%posts.reverse(); %>
+    <%  posts.forEach(function(post){ %>
+      <div class="blog">
+      <h1 class="blog-title"><%=post.title%></h1>
+      <p class="blog-about">
+      <%=post.about%>
+      </p>
+      <h3 class="blog-author"> By <%=post.author%></h3>
+      <h6 class="blog-date"><%=post.date%></h6>
+      <div class="flex-container">
+        <form action="/profile/read" method="POST">
+          <input type='hidden' name='name' value='<%=post._id%>'>
+          <button class="btn btn-info read pb" type="submit" class="btn btn-danger">Read</button>
+        </form>
+        <form action="/profile/update" method="POST">
+          <input type='hidden' name='name' value='<%=post._id%>'>
+          <button type="submit" class="btn btn-dark pb">Update</button>
+        </form>
+        <form action="/profile/delete" method="POST">
+          <input type='hidden' name='name' value='<%=post._id%>'>
+          <button type="submit" class="btn btn-danger pb">Delete</button>
+        </form>
+      </div>
+      <hr>
+      </div>
+
+      <% }) %>
+    </div>
+<%- include("partials/footer"); -%>

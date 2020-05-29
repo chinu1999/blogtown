@@ -1,0 +1,238 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body{
+  margin: 0;
+  text-align: center;
+}
+
+a {
+    color: #e9e5dd;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c8dad3;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  color: #40514E;
+  /* width: 50%;
+  margin: 50px auto 50px auto; */
+}
+
+hr{
+  border: solid #66BFBF 1px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 70%;
+  margin: 20px auto 20px 0;
+}
+
+.jumbotron .h1, .jumbotron h1 {
+    color: inherit;
+    margin-bottom: 50px;
+}
+
+.width{
+  align-items: center;
+  width: 250px;
+}
+
+.form-group{
+  text-align: left;
+  margin-left: 0;
+}
+
+.btn-google {
+    margin-left: 0;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #4285f4;
+    border-color: rgba(0,0,0,0.2);
+}
+
+/* Heading */
+.heading{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  text-align: left;
+  color: grey;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* Navbar */
+.navbar-brand{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 5px;
+}
+
+.navbar {
+    background-color: #c3edea;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-top: 60;
+    margin-bottom: 60;
+    font-size: 12px;
+}
+
+.nav-text{
+  font-size: 1.7rem;
+}
+
+.navbar-nav  li a:hover {
+    color: #333333 !important;
+}
+
+/* Blog */
+
+.blog {
+  display: block;
+  /* background-color: #effcef; */
+  text-align: left;
+    /* background-color: #66BFBF; */
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.blog-title {
+  font-family: 'Ubuntu', sans-serif;
+  color: #706c61;
+}
+
+.blog-about {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  color: #706c61;
+}
+
+.blog-author {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.7rem;
+  color: #79bac1;
+}
+
+.blog-date {
+  font-size: 1.3rem;
+  color: #706c61;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #79bac1 !important;
+}
+
+.read{
+  margin-left: 0;
+}
+
+.flex-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pb{
+  margin-right:20px;
+}
+
+/* Profile */
+
+.profile {
+  /* display: block; */
+  /* background-color: #effcef; */
+  text-align: left;
+    /* background-color: #66BFBF; */
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.name{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  color: #79bac1;
+}
+
+.email{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3rem;
+  color: #79bac1;
+  margin-bottom: 50px;
+}
+
+/* Compose */
+
+.compose {
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 0;
+}
+
+/* Post */
+
+.about {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  color: #706c61;
+}
+
+.author {
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  color: #79bac1;
+}
+
+.date {
+  text-align: left;
+  font-size: 1.3rem;
+  color: #706c61;
+}
+
+.content {
+  font-family: 'Oxygen', sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  color: #706c61;
+}
+
+/* Footer */
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+    background-color: #66BFBF;
+    margin-top: 100px;
+    padding: 50px 0 20px;
+}
+
+.white {
+    background-color: white;
+    height: 300px;
+}
+
+.footer-text{
+  font-size: 2rem;
+  margin: 30px 30px 10px;
+}
+
+.footer-link{
+  margin: 30px;
+}

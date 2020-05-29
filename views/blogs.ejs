@@ -1,0 +1,20 @@
+<%- include("partials/header"); -%>
+
+    <h1 class="heading">Feeds</h1>
+
+	<%posts.reverse(); %>
+  <%  posts.forEach(function(post){ %>
+    <div class="blog">
+    <h1 class="blog-title"><%=post.title%></h1>
+    <p class="blog-about">
+    <%=post.about%>
+    </p>
+    <h3 class="blog-author"> By <%=post.author%></h3>
+    <h6 class="blog-date"><%=post.date%></h6>
+    <a class="btn btn-info read" href="/posts/<%=post._id%>">Read</a>
+    <hr>
+    </div>
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>

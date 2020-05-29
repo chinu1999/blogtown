@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+
+    <h1>Edit Post</h1>
+    <form class="" action="/edit" method="POST">
+      <div class="form-group">
+        <label class="compose">Title</label>
+        <textarea class="form-control" name="postTitle" rows="1" cols="30"><%=title%></textarea>
+        <label class="compose">About</label>
+        <textarea class="form-control" name="postAbout" rows="1" cols="30"><%=about%></textarea>
+        <label class="compose">Post</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30"><%=content%></textarea>
+      </div>
+      <button class="btn btn-primary read" type="submit" name="button" value="<%=value%>">Save</button>
+    </form>
+
+<%- include("partials/footer"); -%>
